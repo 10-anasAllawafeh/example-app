@@ -24,134 +24,63 @@
         </style>
     </head>
     <body class="antialiased">
-      <nav class="container-fluid navbar navbar-light bg-danger ml-2 mr-2">
-        <a class="navbar-brand pl-2" href="#">
-            <img src="https://th.bing.com/th/id/OIP.DbrIkFFvRigvdtdT6vBUYAHaH6?pid=ImgDet&rs=1" width="150" height="150" alt="logo">
-        </a>
-        <ul class="nav ">
-          <li class="active"> <a href="/landPage">Home</a></li>
-          <li> <a href="/about">About</a></li>
-          <li> <a href="/contact">Contact us</a></li>
-        </ul>
-        <ul class="nav justify-content-center">
-        <li class="nav-item">
-            <button class="btn btn-outline-warning " type="submit"><a href="/login">log in</a></button>
-            <button class="btn btn-outline-warning " type="submit"><a href="/signup">sign up</a></button>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        </li>
-        </ul>     
-        </div>
-    </nav>
+        <nav class="container-fluid navbar navbar-light bg-danger ml-2 mr-2">
+            <a class="navbar-brand pl-2" href="#">
+                <img src="https://th.bing.com/th/id/OIP.DbrIkFFvRigvdtdT6vBUYAHaH6?pid=ImgDet&rs=1" width="150" height="150" alt="logo">
+            </a>
+            <ul class="nav ">
+              <li class="active"> <a href="/landPage">Home</a></li>
+              <li> <a href="/about">About</a></li>
+              <li> <a href="/contact">Contact us</a></li>
+            </ul>
+            <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <button class="btn btn-outline-warning " type="submit"><a href="/login">log in</a></button>
+                <button class="btn btn-outline-warning " type="submit"><a href="/signup">sign up</a></button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </li>
+            </ul>     
+            </div>
+        </nav>
 <br><br>
 
-<div class="hr-theme-slash-2">
-    <div class="hr-line"></div>
-    <div class="hr-icon"><i class="fa-solid fa-couch"></i></div>
-    <div class="hr-line"></div>
-  </div>
-  <div class="contactus">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <div class="title">
+<!-- Log In form -->
 
-            {{-- <h2 class="contact">About</h2> --}}
-          </div>
-        </div>
-      </div>
+<form  action="/login" method="POST" id="logForm">
+
+    
+    <h2 style="text-align:center; font-family: 'FontAwesome'; color:#363062;
+font-weight: bolder;">Log In form</h2>
+
+
+<div class="form-row">
+    <div class="col-md-4 offset-md-4">
+    <label for="email">Your E-mail</label>   
+    <input type="email" name="email" id="email" class="form-control is-inavalid" placeholder="test@test.com" value="">
     </div>
-  </div>
-  
-  
-  
-  <div class="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-          <div class="aboutimg">
-              <br><br><br><br><br><br><br><br><br><br><br>
-            <h3>About us</h3>
-            <p>Choclate vactory collection of sweeties for all sleek lines, delecious taste, exciting shades, and everything else to turn your billy into a space you adore. With everything we sell as the art jello-imagined to mid-century modern-derived .we focus on simple taste rather than the heavy ornamentation typically found in traditional or contemporary desserts.
-                Choclate vactory collection of sweeties for all sleek lines, delecious taste, exciting shades, and everything else to turn your billy into a space you adore. With everything we sell as the art jello-imagined to mid-century modern-derived .we focus on simple taste rather than the heavy ornamentation typically found in traditional or contemporary desserts
-            </p>
-          </div>
-        </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-          <div class="aboutimg">
-            <figure><img width="750" height="750" src="https://th.bing.com/th/id/R.bf40bf1736144363f1998d5e8d4bf2fe?rik=B3XlIELv77NOBA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-E3eGAcXSjHI%2fVRRf_jVSzcI%2fAAAAAAAAP70%2fW5gyR-hVZNU%2fs1600%2fPrize-Winning-Chocolate-Cake-6inch_2.jpg&ehk=UUxzuIahwP%2bBk7ubrJVylqijCBWqtLYdKeV4vfMXBHk%3d&risl=&pid=ImgRaw&r=0" /></figure>
-          </div>
-        </div>
-      </div>
-      <div class="text-success">
-        <hr>
-      </div>
-      <div class="container aboutimg">
-          <div class="offset-3">
-        <h3>Our Team</h3></div>
-      </div>
-      <div class="row" style="justify-content: space-evenly;">
-        <!-- //////////////////////////////// -->
-        <!-- second one -->
-        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-          <div class="card aboutheight" style="width: 18rem;">
-            <img class="card-img-top" src="https://th.bing.com/th/id/R.3c7d47d12e7f5032b98b2cbde8a65c98?rik=7XmMk1faKEWq3A&pid=ImgRaw&r=0" alt="Card image cap">
-            <div class="card-body">
-              <h3 class="card-title">Du'a Alsafasfeh</h3>
-              <p class="card-text">Full Stack Web Developer</p>
-              <a href="https://www.linkedin.com/in/du-a-alsafasfeh-70a9a7147/" target="_blank" class="card-link"><i class="fa fa-linkedin fa-lg"></i></a>
-              <a href="https://github.com/Dua-Alsafasfeh" target="_blank" class="card-link"><i class="fa-brands fa-github fa-lg" ></i></a>
-            </div>
-          </div>
-        </div>
-        <!-- third one -->
-        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-          <div class="card aboutheight" style="width: 18rem;">
-            <img class="card-img-top" src="https://th.bing.com/th/id/R.3c7d47d12e7f5032b98b2cbde8a65c98?rik=7XmMk1faKEWq3A&pid=ImgRaw&r=0" alt="Card image cap">
-            <div class="card-body">
-              <h3 class="card-title">Taebah Shlouh</h3>
-              <p class="card-text">Full Stack Web Developer</p>
-              <a href="https://www.linkedin.com/in/dyar-hunaity-90a540236/" target="_blank" class="card-link"><i class="fa fa-linkedin fa-lg"></i></a>
-              <a href="https://github.com/Dyarhunaity/projectphp5" target="_blank" class="card-link"><i class="fa-brands fa-github fa-lg"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="text-success">
-        <br>
-      </div>
-      <div class="row" style="justify-content: space-evenly;">
-        <!-- fourth one -->
-        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-          <div class="card aboutheight" style="width: 18rem;">
-            <img class="card-img-top" src="https://th.bing.com/th/id/R.3c7d47d12e7f5032b98b2cbde8a65c98?rik=7XmMk1faKEWq3A&pid=ImgRaw&r=0" alt="Card image cap">
-            <div class="card-body">
-              <h3 class="card-title">Marwa Nseerat</h3>
-              <p class="card-text">Full Stack Web Developer</p>
-              <a href="https://www.linkedin.com/in/marwa-nseerat-971057227/" target="_blank" class="card-link"><i class="fa fa-linkedin fa-lg"></i></a>
-              <a href="https://github.com/marwanseerat" target="_blank" class="card-link"><i class="fa-brands fa-github fa-lg"></i></a>
-            </div>
-          </div>
-        </div>
-        <!-- </div> -->
-        <!--first one -->
-        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-            <div class="card aboutheight" style="width: 18rem;">
-              <img class="card-img-top" src="https://th.bing.com/th/id/R.0be6834f8f3924a5adfc2fcb3ba376dd?rik=KQzuOX%2fnzSmKbw&pid=ImgRaw&r=0" alt="Card image cap">
-              <div class="card-body">
-                <h3 class="card-title">Anas Allawafeh</h3>
-                <p class="card-text">Full Stack Web Developer</p>
-                <a href="https://www.linkedin.com/in/anas-al-lawafeh-b05954232/" target="_blank" class="card-link"><i class="fa fa-linkedin fa-lg"></i></a>
-                <a href="https://github.com/10-anasAllawafeh" target="_blank" class="card-link"><i class="fa-brands fa-github fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <!-- </div> -->
-        <!-- //////////////////////////////////// -->
-      </div>
+</div>
+<div class="form-row">
+    <div class="col-md-4 offset-md-4">
+    <label for="password">Password</label>   
+    <input type="password" name="password" id="password" class="form-control is-inavalid" placeholder="********" value="">
+    <div class="invalid-feedback" style="">
     </div>
-  </div>
+    </div>
+</div>
+
+<button class="btn col-md-4 offset-md-4" type="submit" name="login" style="background-color:#363062 ; color:#E9D5DA"><a href="/login">Log In !!!</a></button>
+<br><br>
+<!-- End Log In form -->
+
+<!-- switch to signup form -->
+</form>
+<form  action="login.php" method="POST" id="sForm">
+<button class="btn col-md-4 offset-md-4" type="submit" name="switch" style="background-color:#E9D5DA ; color:#363062"><a href="/signup">Sign Up !!!</a></button>
+<a class="col-md-4 offset-md-4" href="/signup">Forget password?</a>
+</form>
+<!-- end of switch to signup form -->
 
 <br><br>
 <footer class="bd-footer py-4 py-md-5 mt-5 bg-danger">

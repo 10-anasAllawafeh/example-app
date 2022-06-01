@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\tstcontroller;
+use GuzzleHttp\Psr7\Request;
+use Illuminate\Http\Request as HttpRequest;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,14 +29,42 @@ Route::get('/', function () {
 //     return response($name);
 // });
 
-Route::get("/choclate", function(){
-    return view("new");
+// Route::get("/choclate", function(){
+//     return view("new");
+// });
+
+// Route::get("/contact", function(){
+//     return view("new1");
+// });
+
+// Route::get("/about", function(){
+//     return view("new2");
+// });
+
+// Route::get('/listdata', function(){
+//     $tasks = [
+//         'sneakers',
+//         'mars',
+//         'twix'  
+//     ];
+//     return view('listdata',compact('tasks')); 
+// });
+
+// Route::get("/search", function(HttpRequest $request){
+//     return $request->name;
+// });
+
+// Route::get("/listdata", 'App\Http\Controllers\tstcontroller@test');
+
+Route::controller(tstcontroller::class)->group(function () {
+    Route::get('/listdata', 'test');
+    Route::get('/landPage', 'landPage');
+    Route::get('/contact', 'contact');
+    Route::get('/about', 'about');
+    Route::get('/login', 'login');
+    Route::get('/signup', 'signup');
+
 });
 
-Route::get("/contact", function(){
-    return view("new1");
-});
 
-Route::get("/about", function(){
-    return view("new2");
-});
+Route::get('/id/{id}/name/{name}', [tstcontroller::class, 'render'])->where(['id' => '[0-9]+', 'name' => '[A-z]+']);

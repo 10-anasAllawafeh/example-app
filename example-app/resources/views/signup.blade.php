@@ -24,100 +24,103 @@
         </style>
     </head>
     <body class="antialiased">
-        <nav class="container-fluid navbar navbar-light bg-danger ml-2 mr-2">
-            <a class="navbar-brand pl-2" href="#">
-                <img src="https://th.bing.com/th/id/OIP.DbrIkFFvRigvdtdT6vBUYAHaH6?pid=ImgDet&rs=1" width="150" height="150" alt="logo">
-            </a>
-            <ul class="nav">
-              <li class="active"><a href="/landPage">Home</a></li>
-              <li> <a href="/about">About</a></li>
-              <li> <a href="/contact">Contact us</a></li>
-            </ul>
-            <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <button class="btn btn-outline-warning " type="submit"><a href="/login">log in</a></button>
-                <button class="btn btn-outline-warning " type="submit"><a href="/signup">sign up</a></button>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            </li>
-            </ul>     
-            </div>
-        </nav>
-<br><br>
-        <div class="container">
-            <div class="row">
-                {{-- <div class="col-2">
-                    <div class="d-grid gap-3">
-                        <div class="p-2 bg-light border">Choclate</div>
-                        <div class="p-2 bg-light border">Vanilla</div>
-                        <div class="p-2 bg-light border">Jelly</div>
-                      </div>
-                </div> --}}
-                {{-- <div class="col-10"> --}}
-            <div class="col-4 mt-5">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" width="20px" height="240px" src="https://live.staticflickr.com/8486/8228131648_4a97223e8c_z.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Sneakers</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go Shopping!</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" width="20px" height="240px" src="https://th.bing.com/th/id/R.5f0ed03bf44c12f56d2d12dd25761443?rik=hlHF5J9TNfBSQA&pid=ImgRaw&r=0" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Twix</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go Shopping!</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-4 mt-5">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" width="20px" height="240px" src="https://th.bing.com/th/id/OIP.G0OdYsZOlojJ8AUHZL5j7gHaHa?pid=ImgDet&rs=1" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Bounty</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go Shopping!</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-4 mt-5">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" width="20px" height="240px" src="https://th.bing.com/th/id/R.6673be91e2826c466c8c4bb811670cf4?rik=Ha%2b1XCSoNC6pVw&pid=ImgRaw&r=0" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Cheese cake</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go Shopping</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-4 mt-2">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" width="20px" height="240px" src="https://th.bing.com/th/id/OIP._QYUrBqSlfyfZBTFnjo7CgHaHa?pid=ImgDet&rs=1" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Pudding</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go Shopping</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-4 mt-5">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" width="20px" height="240px" src="https://th.bing.com/th/id/OIP._sUobdY9Zqj-gRoZAF14TgHaHa?pid=ImgDet&rs=1" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Jelly Beans</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go Shopping</a>
-                    </div>
-                  </div>
+      <nav class="container-fluid navbar navbar-light bg-danger ml-2 mr-2">
+         <a class="navbar-brand pl-2" href="#">
+             <img src="https://th.bing.com/th/id/OIP.DbrIkFFvRigvdtdT6vBUYAHaH6?pid=ImgDet&rs=1" width="150" height="150" alt="logo">
+         </a>
+         <ul class="nav ">
+           <li class="active"> <a href="/landPage">Home</a></li>
+           <li> <a href="/about">About</a></li>
+           <li> <a href="/contact">Contact us</a></li>
+         </ul>
+         <ul class="nav justify-content-center">
+         <li class="nav-item">
+             <button class="btn btn-outline-warning " type="submit"><a href="/login">log in</a></button>
+             <button class="btn btn-outline-warning " type="submit"><a href="/signup">sign up</a></button>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         </li>
+         </ul>     
+         </div>
+     </nav>
+
+<!-- Sign Up form -->
+<main class="regmain">
+    <div>
+        <br>
+        <form class="needs-validation" action="/signup" method="GET" novalidate>
+            <h2 style="text-align:center ; font-family: 'FontAwesome';
+    font-weight: bolder;">Sign Up</h2>
+
+            <div class="form-row">
+                <div class="col-4 offset-4">
+                    <label for="validationCustom01">First Name</label>
+                    <input type="text" class="form-control is-inavalid" id="validationCustom01" name="fName" placeholder="First Name" class="loginBox" required>
                 </div>
-            {{-- </div> --}}
+                <div class="col-4 offset-4">
+                    <label for="validationCustom02">Last Name</label>
+                    <input type="text" class="form-control is-inavalid" id="validationCustom02" name="lName" placeholder="Last Name" class="loginBox" required>
+                </div>
             </div>
-        </div>
+            <div class="form-row">
+                <div class="col-md-4 offset-md-4">
+                    <label for="validationemail">Email</label>
+                    <div class="input-group">
+                        <input type="email" class="form-control is-inavalid" id="validationemail" name="registerEmail" placeholder="test@test.com" aria-describedby="inputGroupPrepend" class="loginBox" required>
+                        <div class="invalid-feedback">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-4 offset-md-4">
+                    <label for="validationemail">Phone</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control is-inavalid" id="validationemail" name="phoneNumber" placeholder="0777777777" aria-describedby="inputGroupPrepend" pattern="[0-9]{10}" class="loginBox" required>
+                        <div class="invalid-feedback">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4 offset-md-4">
+                <label for="inputState">City</label>
+                <select id="inputState" name="city" class="form-control is-inavalid" style="height:7vh ;">
+                    <option selected>Choose...</option>
+                    <option value="Amman">Amman</option>
+                    <option value="Aqaba">Aqaba</option>
+                    <option value="Maan">Maan</option>
+                    <option value="Irbid">Irbid</option>
+                    <option value="Zarqa">Zarqaa</option>
+                    <option value="Ajloun">Ajloun</option>
+                    <option value="Jarash">Jarash</option>
+                    <option value="Al-Mafraq">Al-Mafraq</option>
+                    <option value="Al-Tafeela">Al-Tafila</option>
+                    <option value="El-Karak">Al-Karak</option>
+                    <option value="Madaba">Madaba</option>
+                    <option value="Al-Salt">Al-Salt</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <div class="col-4 offset-4">
+                    <label for="validationpass">Password</label>
+                    <input type="password" class="form-control is-inavalid" id="validationpass" name="registerPass" placeholder="********" class="loginBox" required>
+                </div>
+
+                <div class="col-4 offset-4">
+                    <label for="validationConPass">Confirm password</label>
+                    <input type="password" class="form-control is-inavalid" id="validationConPass" name="registerConfPass" placeholder="********" class="loginBox" required>
+                </div>
+            </div><br><br>
+            <button type="submit" class="btn col-md-4 offset-md-4" name="signup" style="background-color:#363062 ; color:#E9D5DA"><a href="/signup">Sign Up</a></button>
+            </form><br><br>
+            <!-- switch to login form -->
+            <form class="needs-validation" action="/login" method="GET" novalidate>
+                <button class="btn col-md-4 offset-4" type="submit" name="switch" style="background-color:#E9D5DA ; color:#363062"><a href="/login">Log In</a></button>
+            </form>
+            
+<!-- End Sign Up form -->
 <br><br>
         <footer class="bd-footer py-4 py-md-5 mt-5 bg-danger">
             <div class="container py-4 py-md-5 px-4 px-md-3">
