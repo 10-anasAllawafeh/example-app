@@ -66,5 +66,11 @@ Route::controller(tstcontroller::class)->group(function () {
 
 });
 
-
 Route::get('/id/{id}/name/{name}', [tstcontroller::class, 'render'])->where(['id' => '[0-9]+', 'name' => '[A-z]+']);
+
+Route::controller(tstcontroller::class)->group(function(){
+    Route::get('/index', 'index');
+    Route::get('/about_pages', 'about_pages');
+    Route::get('/service', 'service');
+
+});

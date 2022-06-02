@@ -29,4 +29,14 @@ class tstcontroller extends Controller
     public function signup(){
         return view("signup");
     }
+    public function index(){
+        return view("pages.index");
+    }
+    public function about_pages(){
+        $group=array('one' => 'Duaa Alsafasfeh','two' => 'Marwa Nseerat','three' => 'Taebah Shlouh','four' => 'Anas Allawafeh');
+        return view("pages.about")->with($group);
+    }
+    public function service(){
+        return view("pages.service");
+    }
 }
