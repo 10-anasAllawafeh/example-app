@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CardController;
 use App\Http\Controllers\tstcontroller;
 use GuzzleHttp\Psr7\Request;
 use Illuminate\Http\Request as HttpRequest;
@@ -56,21 +57,30 @@ Route::get('/', function () {
 
 // Route::get("/listdata", 'App\Http\Controllers\tstcontroller@test');
 
-Route::controller(tstcontroller::class)->group(function () {
-    Route::get('/listdata', 'test');
-    Route::get('/landPage', 'landPage');
-    Route::get('/contact', 'contact');
-    Route::get('/about', 'about');
-    Route::get('/login', 'login');
-    Route::get('/signup', 'signup');
+// Route::controller(tstcontroller::class)->group(function () {
+//     Route::get('/listdata', 'test');
+//     Route::get('/landPage', 'landPage');
+//     Route::get('/contact', 'contact');
+//     Route::get('/about', 'about');
+//     Route::get('/login', 'login');
+//     Route::get('/signup', 'signup');
 
-});
+// });
 
-Route::get('/id/{id}/name/{name}', [tstcontroller::class, 'render'])->where(['id' => '[0-9]+', 'name' => '[A-z]+']);
+// Route::get('/id/{id}/name/{name}', [tstcontroller::class, 'render'])->where(['id' => '[0-9]+', 'name' => '[A-z]+']);
 
-Route::controller(tstcontroller::class)->group(function(){
-    Route::get('/index', 'index');
-    Route::get('/about_pages', 'about_pages');
-    Route::get('/service', 'service');
+// Route::controller(tstcontroller::class)->group(function(){
+//     Route::get('/index', 'index');
+//     Route::get('/about_pages', 'about_pages');
+//     Route::get('/service', 'service');
 
+// });
+
+Route::controller(CardController::class)->group(function(){
+    Route::get('index', 'display');
+    Route::get('add-product', 'add');
+    Route::post('add-product','insert');
+    Route::get('delete/id/{id}', 'destroy');
+    Route::get('edit-product/id/{id}', 'edit');
+    Route::put('update-product/id/{id}', 'update');
 });
