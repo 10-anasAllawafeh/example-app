@@ -11,6 +11,9 @@ class MovieController extends Controller
         $movies= movie::all();
         return view('movies.home', compact('movies'));
     }
+    public function add(){
+        return view('movies.add');
+    }
     public function storeMovie($id){
         $movie= movie::find($id);
         return view('movies.view', compact('movie'));
@@ -23,25 +26,28 @@ class MovieController extends Controller
         $movie->description =$request->input('description');
         $movie->genre =$request->input('genre');
         $movie->trailer =$request->input('trailer');
-        
+        $movie->picture =$request->input('picture');
         $movie->save();
-        return redirect('movies.home')->with('message','Movie Added Successfully');
+        return redirect('/home')->with('message','Movie Added Successfully');
     }
     public function editMovie($id){
         $movie= movie::find($id);
-        return redirect('movies.update', compact('movie'));
+        return view('movies.update',compact('movie'));
     }
-    public function updateMovie($id){
+    public function updateMovie(Request $request,$id){
         $movie= movie::find($id);
-        $movie->name = request('name');
-        $movie->description =request('description');
-        $movie->genre =request('genre');
-        $movie->save();
-        return redirect('movies.home')->with('message','Movie Updated Successfully');
+        $movie->name = $request->input('name');
+        $movie->description =$request->input('description');
+        $movie->genre =$request->input('genre');
+        $movie->trailer =$request->input('trailer');
+        $movie->picture =$request->input('picture');
+        $movie->update();
+        return redirect('home')->with('message','Movie Updated Successfully');
     }
     public function deleteMovie($id){
         $movie= movie::find($id);
-        $movie->delete();
-        return redirect('movies.home')->with('message','Movie Deleted Successfully');
+        $movie->destroy = 1;
+        $movie->update();
+        return redirect('home')->with('message','Movie Deleted Successfully');
     }
 }

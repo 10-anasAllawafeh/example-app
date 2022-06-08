@@ -15,17 +15,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('movies.add');
+    return view('movies.update');
 });
 
 
 Route::controller(MovieController::class)->group(function ()
 {
     Route::get('/home', 'index');
-    Route::get('/store', 'storeMovie');
-    Route::get('/edit', 'editMovie');
-    Route::get('/delete', 'deleteMovie');
-    Route::put('/update', 'updateMovie');
+    Route::get('/store/id/{id}', 'storeMovie');
+    Route::get('/edit/id/{id}', 'editMovie');
+    Route::get('/delete/id/{id}', 'deleteMovie');
+    Route::put('/update/id/{id}', 'updateMovie');
     Route::post('/add-data', 'addMovie');
+    Route::get('/add', 'add');
     
 });

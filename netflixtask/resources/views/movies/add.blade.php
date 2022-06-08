@@ -16,8 +16,11 @@
                 <input type="text" class="form-control" id="description" name="description" required>
                 <label for="genre">Movie Genre</label>
                 <input type="text" class="form-control" id="genre" name="genre" required>
-                <label for="trailer">Movie trailer</label>
+                <label for="trailer">Movie Trailer</label>
                 <input type="text" class="form-control" id="trailer" name="trailer" required>
+                <label for="picture">Movie Picture</label>
+                <input type="text" class="form-control" id="picture" name="picture" required>
+                
                 <button type="submit" class="btn offset-5 mt-5" style="border:1px solid red ;color:red">Add</button>
             </form>
         </div>

@@ -23,7 +23,7 @@
             <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></a>
           </div>      
           <nav class="main-nav">                
-            <a href="/">Home</a>
+            <a href="/home">Home</a>
             <a href="/">TV Shows</a>
             <a href="/">Movies</a>
             <a href="/">Originals</a>
