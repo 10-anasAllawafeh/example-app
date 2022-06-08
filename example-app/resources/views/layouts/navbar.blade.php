@@ -10,7 +10,7 @@
     <ul class="nav justify-content-center">
     <li class="nav-item">
         <button class="btn btn-outline-warning " type="submit"><a href="/login">log in</a></button>
-        <button class="btn btn-outline-warning " type="submit"><a href="/signup">sign up</a></button>
+        <button class="btn btn-outline-warning " type="submit"><a href="/register">sign up</a></button>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>

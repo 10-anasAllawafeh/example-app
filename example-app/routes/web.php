@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CardController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\tstcontroller;
 use GuzzleHttp\Psr7\Request;
 use Illuminate\Http\Request as HttpRequest;
@@ -84,3 +85,8 @@ Route::controller(CardController::class)->group(function(){
     Route::get('edit-product/id/{id}', 'edit');
     Route::put('update-product/id/{id}', 'update');
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/admin', [HomeController::class,'admin'])->middleware('admin');
